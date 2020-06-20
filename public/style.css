@@ -86853,49 +86853,54 @@ video {
 }
 
 body {
-  font-family: 'Arvo', serif;
+    font-family: 'Arvo', serif;
 }
 .h-screen-body {
-  min-height:calc(100vh - 16rem)!important;
+    min-height:calc(100vh - 16rem)!important;
 }
 .black {
-  color: #000;
+    color: #000;
 }
 .text-primary {
-  color: #0E3B43;
+    color: #0E3B43;
 }
 .text-secondary {
-  color: #C9F299;
+    color: #C9F299;
 }
 .text-tertiary {
-  color: #4BC0D9;
+    color: #4BC0D9;
 }
 .text-alert {
-  color: #FF6542;
+    color: #FF6542;
 }
 .text-muted {
-  color: #C4C4C4;
+    color: #C4C4C4;
 }
 
 .bg-primary {
-  background: #0E3B43;
+    background: #0E3B43;
 }
 .bg-secondary {
-  background: #C9F299;
+    background: #C9F299;
 }
 .bg-tertiary {
-  background: #4BC0D9;
+    background: #4BC0D9;
 }
 .bg-alert {
-  background: #FF6542;
+    background: #FF6542;
 }
 .bg-muted {
-  background: #C4C4C4;
+    background: #C4C4C4;
 }
 
 .dark {
-  filter: brightness(70%)
+    filter: brightness(70%)
 }
 .bg-image-z {
-  z-index: -1;
+    z-index: -1;
+}
+@media (min-width: 1280px) {
+  .xl\:h-120{
+    height: 700px;            
+  }
 }

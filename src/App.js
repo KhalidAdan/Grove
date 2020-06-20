@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import {Main} from './components/Main/Main';
+import {Item} from './components/Item/Item';
 import { CartProvider } from './components/ShoppingCartContext';
 
 function App() {
@@ -19,8 +20,8 @@ function App() {
           <Switch>
             <CartProvider>
               <Route path="/" component={Main} exact />
-              {/* <Route path="/item/:uuid/type/:title" component={Item} exact />
-              <Route path="/checkout" component={Checkout} exact /> */}
+              <Route path="/item/:uuid/type/:title" component={Item} exact />
+              {/* <Route path="/checkout" component={Checkout} exact /> */}
             </CartProvider>
           </Switch>
         </BrowserRouter>

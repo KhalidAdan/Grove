@@ -22,5 +22,5 @@ function Main() {
             <Body></Body>
             <BottomNav />
         </div>
-    )
+    );
 }
