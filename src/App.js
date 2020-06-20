@@ -10,6 +10,7 @@ import {
 
 import {Main} from './components/Main/Main';
 import {Item} from './components/Item/Item';
+import {Checkout} from './components/Checkout/Checkout';
 import { CartProvider } from './components/ShoppingCartContext';
 
 function App() {
@@ -21,7 +22,7 @@ function App() {
             <CartProvider>
               <Route path="/" component={Main} exact />
               <Route path="/item/:uuid/type/:title" component={Item} exact />
-              {/* <Route path="/checkout" component={Checkout} exact /> */}
+              <Route path="/checkout" component={Checkout} exact />
             </CartProvider>
           </Switch>
         </BrowserRouter>
