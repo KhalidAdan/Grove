@@ -1,0 +1,22 @@
+{
+    "related" : [
+        {
+            "uuid" : "84d5b0c1-198c-4b05-8b8d-8b4058d1ebf6",
+            "name" : "Banana",
+            "pic"  : "assets/images/bananas-652497_1920.jpg",
+            "price": "$3.99 / lb"
+        },
+        {
+            "uuid" : "c0e88128-12d7-4faa-9e03-59d840a5e436",
+            "name" : "Orange",
+            "pic"  : "assets/images/orange-1995056_1920.jpg",
+            "price": "$3.99 / lb"
+        },
+        {
+            "uuid" : "97268efa-ad2b-4fd1-8408-a1409985835e",
+            "name" : "Apple",
+            "pic"  : "assets/images/apple-1506119_1920.jpg",
+            "price": "$3.99 / lb"
+        }
+    ]
+}

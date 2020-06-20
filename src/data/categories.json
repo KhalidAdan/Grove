@@ -1,0 +1,24 @@
+{
+	"categories" : [
+		{
+			"name" : "Fruit",
+			"pic"  : "assets/images/background-2277_1920.jpg"
+		},
+		{
+			"name" : "Meat",
+			"pic"  : "assets/images/barbecue-1239434_1920.jpg"
+		},
+		{
+			"name" : "Bakery",
+			"pic"  : "assets/images/bread-1284438_1920.jpg"
+		},
+		{
+			"name" : "Drinks",
+			"pic"  : "assets/images/mineral-water-1532300_1920.jpg"
+		},
+		{
+			"name" : "Veggies",
+			"pic"  : "assets/images/vegetables-752153_1920.jpg"
+		}
+	]
+}
