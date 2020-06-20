@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 import { BottomNav } from "../Common/BottomNav";
 import { HomeButton } from "../Common/HomeButton";
@@ -20,17 +20,20 @@ function findItemById(uuid, type) {
 export { Item };
 
 function Item() {
-  const [cart, setCart] = useContext(CartContext);
 
   let { uuid, title } = useParams();
   let item = findItemById(uuid, title);
+  
+
+  const [cart, setCart] = useContext(CartContext);
+  const [currentItem, setCurrentItem] = useState(item);
 
   return (
     <div>
       <HomeButton />
       <div className="w-full px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
         <ItemImage {...item} />
-        <ItemInfo {...item}/>
+        <ItemInfo uuid={item.uuid} name={item.name} price={item.price} amount={item.amount ?? 0} link={item.link ?? "/link/"} />
         <RelatedLinks />
       </div>
       <BottomNav />

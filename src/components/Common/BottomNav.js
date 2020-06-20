@@ -1,13 +1,20 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Link,
 } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faChevronLeft } from "@fortawesome/free-solid-svg-icons";
+import { CartContext } from "../ShoppingCartContext";
 
 export { BottomNav };
 
 function BottomNav() {
+  const [cart, setCart] = useContext(CartContext);
+  
+  let total = cart.reduce((acc, current) => {
+    return acc += (current.price * current.amount)
+  }, 0);
+  
   return (
     <div className="flex justify-center items-center bottom-0 h-20 w-full bg-white sticky">
       <Link to="/checkout">
@@ -21,7 +28,7 @@ function BottomNav() {
           icon={faShoppingCart}
         />
         <p className="inline-block text-tertiary font-semibold text-xl mr-2">
-          $39.90
+          ${total}
         </p>
       </div>
     </div>
