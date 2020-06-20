@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   Route,
   Switch,
@@ -10,10 +10,12 @@ import {
 import {Header} from './Header';
 import {Body} from './Body';
 import { BottomNav } from "../Common/BottomNav";
+import { CartContext } from "../ShoppingCartContext";
 
 export {Main};
 
 function Main() {
+    const [cart, setCart] = useContext(CartContext);
     return (
         <div>
             <Header></Header>

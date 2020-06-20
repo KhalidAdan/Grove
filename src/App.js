@@ -13,7 +13,7 @@ import { CartProvider } from './components/ShoppingCartContext';
 
 function App() {
   return (
-    <div className="bg-gray-100 h-screen">
+    <div className="h-screen">
       <div className="">
       <BrowserRouter>
           <Switch>

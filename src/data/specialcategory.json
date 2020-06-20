@@ -1,93 +1,95 @@
 {
-  "offers": {
-    "title": "Offers",
-    "list": [
-      {
-        "uuid": "e486336f-3da3-4190-bfef-0e6d80eea582",
-        "name": "Avocado",
-        "price": "$1.99 / lb",
-        "pic": "assets/images/avocado.jpg",
-        "desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      },
-      {
-        "uuid": "454b3d67-7ad3-4576-9ba3-315a985e97c3",
-        "name": "Sirloin Steak",
-        "price": "$2.99 / lb",
-        "pic": "assets/images/steak.jpg",
-        "desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      },
-      {
-        "uuid": "fa4072a4-862c-494f-8088-168f61ad0be5",
-        "name": "Ritz Crackers",
-        "price": "$3.99 / lb",
-        "pic": "assets/images/crackers-2067632_1920.jpg",
-        "desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      },
-      {
-        "uuid": "52b09a24-8604-4679-bbd1-f6878007f927",
-        "name": "Milk",
-        "price": "$4.99 / lb",
-        "pic": "assets/images/milk-1887234_1920.jpg",
-        "desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-      }
-    ]
-  },
-  "snacks": {
-    "title": "Snacks",
-    "list": [
-      {
-        "uuid": "189bb072-966f-491b-8aa1-e31f2c8a001e",
-        "name": "Pringles",
-        "price": "$1.99 / lb",
-        "pic": "assets/images/chips-843993_1920.jpg"
-      },
-      {
-        "uuid": "84d56834-3ccc-4ca5-ac02-fd46b6b445f7",
-        "name": "Spicy Jalapeno Pizza",
-        "price": "$2.99 / lb",
-        "pic": "assets/images/pizza-3199081_1920.jpg"
-      },
-      {
-        "uuid": "564a3adc-362c-451d-bcad-45efd928e3be",
-        "name": "Hummus",
-        "price": "$3.99 / lb",
-        "pic": "assets/images/hummus-4834772_1920.jpg"
-      },
-      {
-        "uuid": "bbb00758-505a-4795-9713-ad14b7ae5d13",
-        "name": "Macaroons",
-        "price": "$4.99 / lb",
-        "pic": "assets/images/cookies-4053771_1920.jpg"
-      }
-    ]
-  },
-  "herbs": {
-    "title": "Herbs",
-    "list": [
-      {
-        "uuid": "7c38cede-6e7f-4e22-af87-77dd2863bd9f",
-        "name": "Basil",
-        "price": "$1.99 / lb",
-        "pic": "assets/images/top-view-1248955_1920.jpg"
-      },
-      {
-        "uuid": "d56cfdc5-0dee-4aae-ba76-f4d4eb5263de",
-        "name": "Thyme",
-        "price": "$2.99 / lb",
-        "pic": "assets/images/herbs-2523119_1920.jpg"
-      },
-      {
-        "uuid": "8dfc390a-1736-4692-bafc-503d82cd9844",
-        "name": "Parsley",
-        "price": "$3.99 / lb",
-        "pic": "assets/images/parsley-4688651_1920.jpg"
-      },
-      {
-        "uuid": "11c5cb7b-2f9c-4a83-bbfd-65405a299104",
-        "name": "Assorted Spices",
-        "price": "$4.99 / lb",
-        "pic": "assets/images/spices-887348_1920.jpg"
-      }
-    ]
-  }
+  "data" : [
+    {
+      "title": "Offers",
+      "list": [
+        {
+          "uuid": "e486336f-3da3-4190-bfef-0e6d80eea582",
+          "name": "Avocado",
+          "price": "$1.99 / lb",
+          "pic": "assets/images/avocado.jpg",
+          "desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+          "uuid": "454b3d67-7ad3-4576-9ba3-315a985e97c3",
+          "name": "Sirloin Steak",
+          "price": "$2.99 / lb",
+          "pic": "assets/images/steak.jpg",
+          "desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+          "uuid": "fa4072a4-862c-494f-8088-168f61ad0be5",
+          "name": "Ritz Crackers",
+          "price": "$3.99 / lb",
+          "pic": "assets/images/crackers-2067632_1920.jpg",
+          "desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+          "uuid": "52b09a24-8604-4679-bbd1-f6878007f927",
+          "name": "Milk",
+          "price": "$4.99 / lb",
+          "pic": "assets/images/milk-1887234_1920.jpg",
+          "desc" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        }
+      ]
+    },
+    {
+      "title": "Snacks",
+      "list": [
+        {
+          "uuid": "189bb072-966f-491b-8aa1-e31f2c8a001e",
+          "name": "Pringles",
+          "price": "$1.99 / lb",
+          "pic": "assets/images/chips-843993_1920.jpg"
+        },
+        {
+          "uuid": "84d56834-3ccc-4ca5-ac02-fd46b6b445f7",
+          "name": "Spicy Jalapeno Pizza",
+          "price": "$2.99 / lb",
+          "pic": "assets/images/pizza-3199081_1920.jpg"
+        },
+        {
+          "uuid": "564a3adc-362c-451d-bcad-45efd928e3be",
+          "name": "Hummus",
+          "price": "$3.99 / lb",
+          "pic": "assets/images/hummus-4834772_1920.jpg"
+        },
+        {
+          "uuid": "bbb00758-505a-4795-9713-ad14b7ae5d13",
+          "name": "Macaroons",
+          "price": "$4.99 / lb",
+          "pic": "assets/images/cookies-4053771_1920.jpg"
+        }
+      ]
+    },
+    {
+      "title": "Herbs",
+      "list": [
+        {
+          "uuid": "7c38cede-6e7f-4e22-af87-77dd2863bd9f",
+          "name": "Basil",
+          "price": "$1.99 / lb",
+          "pic": "assets/images/top-view-1248955_1920.jpg"
+        },
+        {
+          "uuid": "d56cfdc5-0dee-4aae-ba76-f4d4eb5263de",
+          "name": "Thyme",
+          "price": "$2.99 / lb",
+          "pic": "assets/images/herbs-2523119_1920.jpg"
+        },
+        {
+          "uuid": "8dfc390a-1736-4692-bafc-503d82cd9844",
+          "name": "Parsley",
+          "price": "$3.99 / lb",
+          "pic": "assets/images/parsley-4688651_1920.jpg"
+        },
+        {
+          "uuid": "11c5cb7b-2f9c-4a83-bbfd-65405a299104",
+          "name": "Assorted Spices",
+          "price": "$4.99 / lb",
+          "pic": "assets/images/spices-887348_1920.jpg"
+        }
+      ]
+    }
+  ]
 }
