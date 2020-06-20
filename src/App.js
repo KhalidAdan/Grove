@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 import {
   BrowserRouter,
   Route,
@@ -8,16 +8,16 @@ import {
   useParams,
 } from "react-router-dom";
 
-import {Main} from './components/Main/Main';
-import {Item} from './components/Item/Item';
-import {Checkout} from './components/Checkout/Checkout';
-import { CartProvider } from './components/ShoppingCartContext';
+import { Main } from "./components/Main/Main";
+import { Item } from "./components/Item/Item";
+import { Checkout } from "./components/Checkout/Checkout";
+import { CartProvider } from "./components/ShoppingCartContext";
 
 function App() {
   return (
     <div className="h-screen">
       <div className="">
-      <BrowserRouter>
+        <BrowserRouter>
           <Switch>
             <CartProvider>
               <Route path="/" component={Main} exact />

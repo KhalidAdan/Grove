@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../ShoppingCartContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
     faChevronLeft,
@@ -15,7 +16,19 @@ function ItemDescription({desc}) {
 }
 
 function ItemHeader({name, price}) {
-  const [count, setCount] = React.useState(0);
+  
+  const [cart, setCart] = useContext(CartContext);
+  
+  console.log(cart);
+  const AddToCart = () => {
+    setCart(cart => [...cart, {
+        id: "486336f-3da3-4190-bfef-0e6d80eea582",
+        name: "Avocado",
+        amount: 3,
+        price: 3.99,
+        link: "/item/",
+      }]);
+  }
     
   return (
     <div className="mt-6 px-6">
@@ -31,16 +44,13 @@ function ItemHeader({name, price}) {
         <div className="flex items-center">
           <button
             className="rounded-lg bg-white border-gray-500  border-2 px-3 mr-3"
-            onClick={() => setCount(count + 1)}
+            onClick={AddToCart}
           >
             <FontAwesomeIcon className="text-xs" icon={faPlus} />
           </button>
-          <span className="text-lg font-semibold w-3">{count}</span>
+          <span className="text-lg font-semibold w-3">12</span>
           <button
             className="rounded-lg bg-white border-gray-500  border-2 px-3 ml-4"
-            onClick={() => {
-              if (count > 0) setCount(count - 1);
-            }}
           >
             <FontAwesomeIcon className="text-xs" icon={faMinus} />
           </button>

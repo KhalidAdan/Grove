@@ -24,7 +24,6 @@ function Item() {
 
   let { uuid, title } = useParams();
   let item = findItemById(uuid, title);
-  console.log(item);
 
   return (
     <div>
