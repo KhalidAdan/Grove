@@ -27,7 +27,7 @@ function DefinedCategoryBody({ list, title }) {
                 <Item
                   className="mb-2"
                   name={obj.name}
-                  price={obj.price}
+                  price={`$${obj.price}`}
                   pic={obj.pic}
                 />
               </Link>

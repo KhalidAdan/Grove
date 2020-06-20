@@ -18,7 +18,7 @@ function ItemDescription({ desc }) {
 function ItemHeader({ uuid, name, amount, price, link }) {
   // set up context
   const [cart, setCart] = useContext(CartContext);
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(amount);
 
   const isItemInCart = () => {
     let itemFound = cart.find((elem) => {
@@ -33,7 +33,8 @@ function ItemHeader({ uuid, name, amount, price, link }) {
 
   const addToCart = () => {
     // check to see if this item's id is in the cart
-    if (isItemInCart()) {// if yes update value
+    if (isItemInCart()) {
+      // if yes increment count
       let newCart = cart.map((elem) => {
         if (elem.id === uuid && elem.amount < 100) {
           elem.amount++;
@@ -44,6 +45,7 @@ function ItemHeader({ uuid, name, amount, price, link }) {
       });
       updateCart(newCart);
     } else {
+      // if no add to cart
       setCount(1);
       setCart((cart) => [...cart, {
         id: uuid, 
@@ -54,8 +56,6 @@ function ItemHeader({ uuid, name, amount, price, link }) {
       }]);
     }
     
-
-    // if no add to cart
   };
 
   const removeFromCart = () => {
@@ -83,7 +83,7 @@ function ItemHeader({ uuid, name, amount, price, link }) {
             {name}
           </h1>
           <h2 className="text-tertiary text-xl font-normal tracking-wide">
-            {price}
+            ${price}
           </h2>
         </div>
         <div className="flex items-center">
