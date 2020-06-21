@@ -4,7 +4,7 @@ import { CartContext } from '../ShoppingCartContext';
 export {Summary};
 
 function Summary() {
-    const [cart, setCart] = useContext(CartContext);
+    const [cart] = useContext(CartContext);
     let subtotal = cart.reduce((acc, current) => {
         return acc += (current.price * current.amount)
       }, 0);
@@ -18,7 +18,7 @@ function Summary() {
         <div className="flex flex-col">
           <div className="flex justify-between">
             <p>Order</p>
-            <p>{"$" + subtotal}</p>
+            <p>{"$" + subtotal.toFixed(2)}</p>
           </div>
           <div className="flex justify-between">
             <p>Tax</p>

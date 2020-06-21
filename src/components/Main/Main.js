@@ -15,7 +15,6 @@ import { CartContext } from "../ShoppingCartContext";
 export {Main};
 
 function Main() {
-    const [cart, setCart] = useContext(CartContext);
     return (
         <div>
             <Header></Header>

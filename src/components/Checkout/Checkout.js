@@ -9,8 +9,6 @@ import {Summary} from "./Summary";
 export { Checkout };
 
 function Checkout() {
-  const [cart, setCart] = useContext(CartContext);
-
   return (
     <div>
       <HomeButton />

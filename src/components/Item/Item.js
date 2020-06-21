@@ -23,9 +23,6 @@ function Item() {
   let { uuid, title } = useParams();
   let item = findItemById(uuid, title);
 
-  const [cart, setCart] = useContext(CartContext);
-  const [currentItem, setCurrentItem] = useState(item);
-
   return (
     <div>
       <HomeButton />

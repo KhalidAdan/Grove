@@ -71,14 +71,14 @@ function DefinedCategoryBody({ list, title }) {
 function Item(props) {
   return (
     <div>
-      <div className="w-32 h-32 mr-16 lg:mr-48 last:mr-0 mb-5">
+      <div className="w-40 h-40 lg:w-52 lg:h-52 mr-10 lg:mr-16 last:mr-0 mb-5">
         <img
-          className="h-32 w-full object-cover rounded-lg"
+          className="h-full w-full object-cover rounded-lg"
           src={props.pic}
           alt=""
         />
       </div>
-      <p>{props.name}</p>
+      <p className="font-hairline w-40 lg:w-52">{props.name}</p>
       <p className="tracking-tight text-tertiary">{props.price}</p>
     </div>
   );

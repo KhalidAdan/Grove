@@ -11,7 +11,7 @@ export { Body };
 
 function Body() {
   return (
-    <div className="w-full px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
+    <div className="w-full px-6 sm:px-16 md:px-32 lg:px-64 xl:px-120">
       <CategoryList />
       {categoryData.data.map( (element, i) => {
         return <DefinedCategoryList key={i} data={element} />;
