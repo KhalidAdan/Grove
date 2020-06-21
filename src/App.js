@@ -15,8 +15,8 @@ import { CartProvider } from "./components/ShoppingCartContext";
 
 function App() {
   return (
-    <div className="h-screen">
-      <div className="">
+    <div className="bg-gray-100 h-full">
+      <div>
         <BrowserRouter>
           <Switch>
             <CartProvider>

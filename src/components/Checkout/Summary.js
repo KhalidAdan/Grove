@@ -11,7 +11,7 @@ function Summary() {
     let tax = (subtotal * 0.13);
     let total = (subtotal + tax);
     return (
-      <div className="px-10 py-6">
+      <div>
         <div>
           <h2 className="text-primary font-bold text-xl mb-4">Summary</h2>
         </div>
