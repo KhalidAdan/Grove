@@ -16,7 +16,7 @@ function BottomNav() {
   }, 0).toFixed(2);
   
   return (
-    <div className="flex justify-center items-center bottom-0 h-20 w-full bg-white sticky">
+    <div className="fixed flex justify-center items-center bottom-0 h-20 w-full bg-white">
       <Link to="/checkout">
         <button className="flex-1 rounded-lg text-white bg-tertiary w-48 p-3 m-3 ml-20">
           Checkout

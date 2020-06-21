@@ -30,10 +30,12 @@ function ItemCount({ item }) {
     return itemFound;
   };
 
-  if (isItemInCart()) {
+  let itemFound = isItemInCart();
+
+  if (itemFound) {
     return (
       <div className="relative w-2 rounded-full px-4 mr-2 text-white bg-tertiary p-2 rounded  leading-none flex justify-center bottom-0">
-        5
+        {itemFound.amount}
       </div>
     );
   } else {
@@ -49,10 +51,10 @@ function DefinedCategoryBody({ list, title }) {
         {list.map((obj, i) => {
           return (
             <li key={obj.uuid}>
-              <div className="flex justify-end pr-10 space-y-4">
-              <ItemCount item={obj} />
-              </div>
               <Link to={"/item/" + obj.uuid + "/type/" + title}>
+                <div className="flex justify-end pr-10 space-y-4">
+                  <ItemCount item={obj} />
+                </div>
                 <Item
                   className="mb-2"
                   name={obj.name}
@@ -78,8 +80,10 @@ function Item(props) {
           alt=""
         />
       </div>
+      <p className="tracking-tight text-tertiary text-2xl font-medium">
+        {props.price}
+      </p>
       <p className="font-hairline w-40 lg:w-52">{props.name}</p>
-      <p className="tracking-tight text-tertiary">{props.price}</p>
     </div>
   );
 }

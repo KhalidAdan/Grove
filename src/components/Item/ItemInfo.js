@@ -63,18 +63,14 @@ function ItemHeader({ uuid, name, price, link }) {
 
   const removeFromCart = () => {
     // check to see if this item's id is in the cart
-    if (isItemInCart()) {
-      let newCart = cart.map((elem) => {
-        if (elem.id === uuid && elem.amount > 0) {
-          elem.amount--;
-          setCount((count) => elem.amount);
-        }
-        return elem;
-      });
-      updateCart(newCart);
-    } else {
-      setCart( cart => cart.filter( item => item.id !== uuid));
-    }
+    let newCart = cart.map((elem) => {
+      if (elem.id === uuid && elem.amount > 0) {
+        elem.amount--;
+        setCount((count) => elem.amount);
+      }
+      return elem;
+    });
+    updateCart(newCart);
   };
 
   const updateCart = (newCart) => {
