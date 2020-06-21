@@ -3,6 +3,7 @@ import { Route, Switch, Link, useHistory, useParams } from "react-router-dom";
 
 import data from "../../data/categories.json";
 import { CartContext } from "../ShoppingCartContext";
+import { render } from "@testing-library/react";
 
 function DefinedCategoryHeader({ title }) {
   return (
@@ -15,6 +16,31 @@ function DefinedCategoryHeader({ title }) {
   );
 }
 
+function ItemCount({ item }) {
+  const [cart, setCart] = useContext(CartContext);
+
+  const isItemInCart = () => {
+    let itemFound = cart.find((elem) => {
+      if (elem.id === item.uuid) {
+        return true;
+      } else {
+        return false;
+      }
+    });
+    return itemFound;
+  };
+
+  if (isItemInCart()) {
+    return (
+      <div className="relative w-2 rounded-full px-4 mr-2 text-white bg-tertiary p-2 rounded  leading-none flex justify-center bottom-0">
+        5
+      </div>
+    );
+  } else {
+    return <div className="h-6 py-4 mr-2 p-2"></div>;
+  }
+}
+
 // List of items
 function DefinedCategoryBody({ list, title }) {
   return (
@@ -23,6 +49,9 @@ function DefinedCategoryBody({ list, title }) {
         {list.map((obj, i) => {
           return (
             <li key={obj.uuid}>
+              <div className="flex justify-end pr-10 space-y-4">
+              <ItemCount item={obj} />
+              </div>
               <Link to={"/item/" + obj.uuid + "/type/" + title}>
                 <Item
                   className="mb-2"
