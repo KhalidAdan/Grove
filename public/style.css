@@ -86903,4 +86903,8 @@ body {
   .xl\:h-120{
     height: 700px;            
   }
+  .xl\:px-120 {
+    padding-left: 30rem;
+    padding-right: 30rem;
+  }
 }

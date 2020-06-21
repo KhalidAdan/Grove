@@ -26,7 +26,7 @@ function Item() {
   return (
     <div>
       <HomeButton />
-      <div className="w-full px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
+      <div className="w-full px-4 sm:px-8 md:px-16 lg:px-32 xl:h-120 xl:px-120">
         <ItemImage {...item} />
         <ItemInfo
           uuid={item.uuid}
