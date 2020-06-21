@@ -2,8 +2,9 @@ import React, { useContext } from "react";
 import { HomeButton } from "../Common/HomeButton";
 import { CheckoutHeader } from "./CheckoutHeader";
 import { GoogleMapLocation } from "./GoogleMapLocation";
-import { ShoppingCart } from './ShoppingCart';
+import { ShoppingCart } from "./ShoppingCart";
 import { CartContext } from "../ShoppingCartContext";
+import {Summary} from "./Summary";
 
 export { Checkout };
 
@@ -18,10 +19,10 @@ function Checkout() {
       <div className="px-6">
         <ShoppingCart />
       </div>
-      {/* <div className="bg-gray-300">
-          <Summary />
-          <PickupDate />
-        </div> */}
+      <div className="bg-gray-300">
+       <Summary />
+           {/* <PickupDate />*/}
+      </div>
     </div>
   );
 }

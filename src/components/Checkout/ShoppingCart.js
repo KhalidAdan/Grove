@@ -5,6 +5,16 @@ export {ShoppingCart};
 
 function ShoppingCart() {
     const [cart, setCart] = useContext(CartContext);
+
+    const removeItem = (uuid) => {
+        let newCart = cart.filter((val) => {
+            // return items that are not the equivalent to the one we want out
+            if (val.id !== uuid) {
+                return val;   
+            } 
+        })
+        setCart(newCart);
+    };
     
     return (
       <div>
@@ -15,7 +25,7 @@ function ShoppingCart() {
           <ul>
             {cart.map((data, i) => {
               return (
-                <li key={i} className="mb-4">
+                <li key={data.id} className="mb-4">
                   <div className="flex justify-between w-full h-24 rounded-lg border-gray-400 border-2 py-6 px-8">
                     <h3 className="flex-none font-bold text-3xl pr-6">
                       {data.amount}
@@ -24,7 +34,7 @@ function ShoppingCart() {
                       <p className="text-lg tracking-wide">{data.name}</p>
                       <div className="flex justify-left">
                         <button className="text-tertiary">Edit</button>
-                        <button className="text-tertiary ml-5">Remove</button>
+                        <button className="text-tertiary ml-5" onClick={(e) => {removeItem(data.id)}}>Remove</button>
                       </div>
                     </div>
                     <p className="flex-none text-tertiary">
