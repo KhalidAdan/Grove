@@ -7,7 +7,9 @@ import {
   faMinus,
 } from "@fortawesome/free-solid-svg-icons";
 
-function ItemDescription({ desc }) {
+function ItemDescription( {desc} ) {
+  console.log(desc);
+  
   return (
     <div className="mt-6 px-6">
       <p className="text-gray-500 text-sm mt-6">{desc}</p>
@@ -15,10 +17,12 @@ function ItemDescription({ desc }) {
   );
 }
 
-function ItemHeader({ uuid, name, amount, price, link }) {
+function ItemHeader({ uuid, name, price, link }) {
   // set up context
   const [cart, setCart] = useContext(CartContext);
-  const [count, setCount] = useState(amount);
+  let amount = cart.find((elem) => elem.id === uuid) ?? 0;
+  
+  const [count, setCount] = useState(amount.amount ?? amount);
 
   const isItemInCart = () => {
     let itemFound = cart.find((elem) => {
@@ -38,7 +42,6 @@ function ItemHeader({ uuid, name, amount, price, link }) {
       let newCart = cart.map((elem) => {
         if (elem.id === uuid && elem.amount < 100) {
           elem.amount++;
-          console.log(elem.amount);
           setCount((count) => elem.amount);
         }
         return elem;
@@ -63,7 +66,6 @@ function ItemHeader({ uuid, name, amount, price, link }) {
     let newCart = cart.map((elem) => {
       if (elem.id === uuid && elem.amount > 0) {
         elem.amount--;
-        console.log(elem.amount);
         setCount((count) => elem.amount);
       }
       return elem;
@@ -109,6 +111,7 @@ function ItemHeader({ uuid, name, amount, price, link }) {
 export { ItemInfo };
 
 function ItemInfo({ uuid, name, amount, price, link, desc }) {
+  
   return (
     <div>
       <ItemHeader uuid={uuid} name={name} price={price} amount={amount ?? 0} link={link ?? ""} />

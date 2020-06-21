@@ -17,6 +17,7 @@ function findItemById(uuid, type) {
     .list.find((element) => element.uuid === uuid);
 }
 
+
 export { Item };
 
 function Item() {
@@ -33,7 +34,7 @@ function Item() {
       <HomeButton />
       <div className="w-full px-4 sm:px-8 md:px-16 lg:px-32 xl:px-64">
         <ItemImage {...item} />
-        <ItemInfo uuid={item.uuid} name={item.name} price={item.price} amount={item.amount ?? 0} link={item.link ?? "/link/"} />
+        <ItemInfo uuid={item.uuid} name={item.name} price={item.price} link={item.link ?? "/link/"} desc={item.desc} />
         <RelatedLinks />
       </div>
       <BottomNav />

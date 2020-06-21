@@ -13,7 +13,7 @@ function BottomNav() {
   
   let total = cart.reduce((acc, current) => {
     return acc += (current.price * current.amount)
-  }, 0);
+  }, 0).toFixed(2);
   
   return (
     <div className="flex justify-center items-center bottom-0 h-20 w-full bg-white sticky">
