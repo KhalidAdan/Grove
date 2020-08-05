@@ -2,4 +2,4 @@
 
 ![Design gif](app.gif) 
 
-[Design image](grove-design.jpg) 
+[Design image](Grove-design.JPG) 
